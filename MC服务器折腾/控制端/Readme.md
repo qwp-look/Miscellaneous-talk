@@ -1,25 +1,57 @@
-再你的控制端安装![moonlight](https://github.com/moonlight-stream/moonlight-qt)
-之后选择手动添加 输入你中转服务器的公网ip，去你的MC-server端打开sunshin输入pin码就可以连接了，以后就不用验证了
-文件管理我选择的是![alist](https://github.com/AlistGo/alist)
-安装再你的你MC-server端
-然后我太懒了直接抄文档
-# 解压下载的文件，得到可执行文件：
-unzip alist-xxxx.zip
-# 运行程序
-.\alist.exe server
+# 控制端配置指南
 
-# 获得管理员信息 以下两个不同版本，新版本也有随机生成和手动设置
-# 低于v3.25.0版本
-.\alist.exe admin
+## 1. 安装 Moonlight
 
-# 高于v3.25.0版本
-# 随机生成一个密码
-.\alist.exe admin random
-# 手动设置一个密码 `NEW_PASSWORD`是指你需要设置的密码
-.\alist.exe admin set NEW_PASSWORD
-之后登录你的alist
-管理
-存储，添加不对存储。
-然后我太懒了直接抄文档。（不对！是我抄我自己）
-![alt text]({F538AA1C-718C-4B7F-B99A-7C0E84712922}.png)
-之后就可以了
+1. 在控制端安装 [Moonlight](https://github.com/moonlight-stream/moonlight-qt)。
+2. 手动添加中转服务器的公网 IP。
+3. 在 MC-server 端打开 Sunshine，输入 PIN 码即可连接，之后无需再次验证。
+
+## 2. 文件管理工具选择
+
+我们选择使用 [Alist](https://github.com/AlistGo/alist)。
+
+### 安装步骤
+
+1. 在 MC-server 端安装 Alist。
+2. 解压下载的文件，得到可执行文件：
+
+   ```bash
+   unzip alist-xxxx.zip
+   ```
+
+3. 运行程序：
+
+   ```bash
+   .\alist.exe server
+   ```
+
+4. 获得管理员信息：
+
+   - **低于 v3.25.0 版本**：
+
+     ```bash
+     .\alist.exe admin
+     ```
+
+   - **高于 v3.25.0 版本**：
+
+     - 随机生成一个密码：
+
+       ```bash
+       .\alist.exe admin random
+       ```
+
+     - 手动设置一个密码（`NEW_PASSWORD` 是你需要设置的密码）：
+
+       ```bash
+       .\alist.exe admin set NEW_PASSWORD
+       ```
+
+5. 登录你的 Alist，进行管理。
+6. 添加存储，完成配置。
+
+   示例：
+
+   ![Alist 配置示例]({F538AA1C-718C-4B7F-B99A-7C0E84712922}.png)
+
+至此，文件管理工具配置完成。

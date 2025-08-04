@@ -1,148 +1,77 @@
-MC的运行软件我们选择的是![MCSManager](https://github.com/MCSManager/MCSManager)
-这个软件可以很方便的运行mc
-记得先安装 ![git](https://git-scm.com/)
-然后我太懒了直接抄文档
-Windows
-git clone https://github.com/MCSManager/MCSManager.git
-./install-dependents.bat
-./npm-dev-windows.bat
-之后创建一个账号
-再创建实例
-游戏的核心我们选择的是![arclight](https://github.com/IzzelAliz/Arclight)
-然后我太懒了直接抄文档
-https://wiki.izzel.io/s/arclight-docs/doc/installation-0ian14HIpu
-https://docs.mcsmanager.com/setup_java_edition.html
-之后点击运行即可
-过程中有少量的报错只要不影响运行就不管
+# MC 服务器运行端配置指南
 
-之后配置管理软件
-我选择的是![sunshine](https://github.com/LizardByte/Sunshine)
-然后我太懒了直接抄文档
-## 🖥️ System Requirements
+## 1. 运行软件选择
 
-@warning{These tables are a work in progress. Do not purchase hardware based on this information.}
+我们选择使用 [MCSManager](https://github.com/MCSManager/MCSManager)，它可以方便地运行 MC 服务器。
 
-<table>
-    <caption id="minimum_requirements">Minimum Requirements</caption>
-    <tr>
-        <th>Component</th>
-        <th>Requirement</th>
-    </tr>
-    <tr>
-        <td rowspan="3">GPU</td>
-        <td>AMD: VCE 1.0 or higher, see: <a href="https://github.com/obsproject/obs-amd-encoder/wiki/Hardware-Support">obs-amd hardware support</a></td>
-    </tr>
-    <tr>
-        <td>
-            Intel:<br>
-            &nbsp;&nbsp;Linux: VAAPI-compatible, see: <a href="https://www.intel.com/content/www/us/en/developer/articles/technical/linuxmedia-vaapi.html">VAAPI hardware support</a><br>
-            &nbsp;&nbsp;Windows: Skylake or newer with QuickSync encoding support
-        </td>
-    </tr>
-    <tr>
-        <td>Nvidia: NVENC enabled cards, see: <a href="https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new">nvenc support matrix</a></td>
-    </tr>
-    <tr>
-        <td rowspan="2">CPU</td>
-        <td>AMD: Ryzen 3 or higher</td>
-    </tr>
-    <tr>
-        <td>Intel: Core i3 or higher</td>
-    </tr>
-    <tr>
-        <td>RAM</td>
-        <td>4GB or more</td>
-    </tr>
-    <tr>
-        <td rowspan="5">OS</td>
-        <td>Windows: 10+ (Windows Server does not support virtual gamepads)</td>
-    </tr>
-    <tr>
-        <td>macOS: 13+</td>
-    </tr>
-    <tr>
-        <td>Linux/Debian: 12+ (bookworm)</td>
-    </tr>
-    <tr>
-        <td>Linux/Fedora: 40+</td>
-    </tr>
-    <tr>
-        <td>Linux/Ubuntu: 22.04+ (jammy)</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Network</td>
-        <td>Host: 5GHz, 802.11ac</td>
-    </tr>
-    <tr>
-        <td>Client: 5GHz, 802.11ac</td>
-    </tr>
-</table>
+### 安装步骤
 
-<table>
-    <caption id="4k_suggestions">4k Suggestions</caption>
-    <tr>
-        <th>Component</th>
-        <th>Requirement</th>
-    </tr>
-    <tr>
-        <td rowspan="3">GPU</td>
-        <td>AMD: Video Coding Engine 3.1 or higher</td>
-    </tr>
-    <tr>
-        <td>
-            Intel:<br>
-            &nbsp;&nbsp;Linux: HD Graphics 510 or higher<br>
-            &nbsp;&nbsp;Windows: Skylake or newer with QuickSync encoding support
-        </td>
-    </tr>
-    <tr>
-        <td>Nvidia: GeForce GTX 1080 or higher</td>
-    </tr>
-    <tr>
-        <td rowspan="2">CPU</td>
-        <td>AMD: Ryzen 5 or higher</td>
-    </tr>
-    <tr>
-        <td>Intel: Core i5 or higher</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Network</td>
-        <td>Host: CAT5e ethernet or better</td>
-    </tr>
-    <tr>
-        <td>Client: CAT5e ethernet or better</td>
-    </tr>
-</table>
+1. 安装 [Git](https://git-scm.com/)。
 
-<table>
-    <caption id="hdr_suggestions">HDR Suggestions</caption>
-    <tr>
-        <th>Component</th>
-        <th>Requirement</th>
-    </tr>
-    <tr>
-        <td rowspan="3">GPU</td>
-        <td>AMD: Video Coding Engine 3.4 or higher</td>
-    </tr>
-    <tr>
-        <td>Intel: HD Graphics 730 or higher</td>
-    </tr>
-    <tr>
-        <td>Nvidia: Pascal-based GPU (GTX 10-series) or higher</td>
-    </tr>
-    <tr>
-        <td rowspan="2">CPU</td>
-        <td>AMD: Ryzen 5 or higher</td>
-    </tr>
-    <tr>
-        <td>Intel: Core i5 or higher</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Network</td>
-        <td>Host: CAT5e ethernet or better</td>
-    </tr>
-    <tr>
-        <td>Client: CAT5e ethernet or better</td>
-    </tr>
-</table>
-之后下下载release安装，创建账号即可
+2. 克隆 MCSManager 仓库并安装依赖：
+
+   ```bash
+   git clone https://github.com/MCSManager/MCSManager.git
+   ./install-dependents.bat
+   ./npm-dev-windows.bat
+   ```
+
+3. 创建账号并创建实例。
+
+## 2. 游戏核心选择
+
+我们选择使用 [Arclight](https://github.com/IzzelAliz/Arclight)。
+
+### 安装步骤
+
+1. 参考以下文档完成安装：
+   - [Arclight 安装文档](https://wiki.izzel.io/s/arclight-docs/doc/installation-0ian14HIpu)
+   - [MCSManager Java 版设置文档](https://docs.mcsmanager.com/setup_java_edition.html)
+
+2. 点击运行即可。
+
+> **注意**：过程中可能会有少量报错，只要不影响运行即可忽略。
+
+## 3. 配置管理软件
+
+我们选择使用 [Sunshine](https://github.com/LizardByte/Sunshine)。
+
+### 系统要求
+
+#### 最低要求
+
+| 组件      | 要求                                                                 |
+|-----------|----------------------------------------------------------------------|
+| GPU       | AMD: VCE 1.0 或更高，详见 [obs-amd 硬件支持](https://github.com/obsproject/obs-amd-encoder/wiki/Hardware-Support) |
+|           | Intel: Linux: VAAPI 兼容，详见 [VAAPI 硬件支持](https://www.intel.com/content/www/us/en/developer/articles/technical/linuxmedia-vaapi.html)<br>Windows: Skylake 或更新版本，支持 QuickSync 编码 |
+|           | Nvidia: NVENC 启用的显卡，详见 [NVENC 支持矩阵](https://developer.nvidia.com/video-encode-and-decode-gpu-support-matrix-new) |
+| CPU       | AMD: Ryzen 3 或更高<br>Intel: Core i3 或更高                          |
+| 内存      | 4GB 或更多                                                           |
+| 操作系统  | Windows: 10+ (Windows Server 不支持虚拟手柄)<br>macOS: 13+<br>Linux/Debian: 12+ (bookworm)<br>Linux/Fedora: 40+<br>Linux/Ubuntu: 22.04+ (jammy) |
+| 网络      | 主机: 5GHz, 802.11ac<br>客户端: 5GHz, 802.11ac                        |
+
+#### 4K 建议
+
+| 组件      | 要求                                                                 |
+|-----------|----------------------------------------------------------------------|
+| GPU       | AMD: Video Coding Engine 3.1 或更高                                  |
+|           | Intel: Linux: HD Graphics 510 或更高<br>Windows: Skylake 或更新版本，支持 QuickSync 编码 |
+|           | Nvidia: GeForce GTX 1080 或更高                                      |
+| CPU       | AMD: Ryzen 5 或更高<br>Intel: Core i5 或更高                          |
+| 网络      | 主机: CAT5e 以太网或更好<br>客户端: CAT5e 以太网或更好               |
+
+#### HDR 建议
+
+| 组件      | 要求                                                                 |
+|-----------|----------------------------------------------------------------------|
+| GPU       | AMD: Video Coding Engine 3.4 或更高                                  |
+|           | Intel: HD Graphics 730 或更高                                        |
+|           | Nvidia: Pascal 架构 GPU (GTX 10 系列) 或更高                         |
+| CPU       | AMD: Ryzen 5 或更高<br>Intel: Core i5 或更高                          |
+| 网络      | 主机: CAT5e 以太网或更好<br>客户端: CAT5e 以太网或更好               |
+
+### 安装步骤
+
+1. 下载 [Sunshine release](https://github.com/LizardByte/Sunshine/releases)。
+
+2. 安装并创建账号即可。
