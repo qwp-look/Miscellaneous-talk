@@ -1,4 +1,4 @@
-MC的运行软件我选择的是![MCSManager](https://github.com/MCSManager/MCSManager)
+MC的运行软件我们选择的是![MCSManager](https://github.com/MCSManager/MCSManager)
 这个软件可以很方便的运行mc
 记得先安装 ![git](https://git-scm.com/)
 然后我太懒了直接抄文档
@@ -8,7 +8,7 @@ git clone https://github.com/MCSManager/MCSManager.git
 ./npm-dev-windows.bat
 之后创建一个账号
 再创建实例
-游戏的核心我选择的是![arclight](https://github.com/IzzelAliz/Arclight)
+游戏的核心我们选择的是![arclight](https://github.com/IzzelAliz/Arclight)
 然后我太懒了直接抄文档
 https://wiki.izzel.io/s/arclight-docs/doc/installation-0ian14HIpu
 https://docs.mcsmanager.com/setup_java_edition.html

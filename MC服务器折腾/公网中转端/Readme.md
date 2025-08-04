@@ -1,11 +1,11 @@
-公网中转端，我选择的是阿里云的公网服务器。
+公网中转端，我们选择的是阿里云的公网服务器。
 主要是因为它价格便宜（68r/year）
 https://www.aliyun.com/
 具体信息为：
 Windows 2022 数据中心版 2vCPU 内存2GiB ESSD云盘:40GiB 公网宽带 200mbps
 使用的原方案是[frp](https://github.com/fatedier/frp)
 但是我发现我的frpc死活连不上于是就放弃了（可能是我太菜了）
-后来我的方案换成了[nps](https://github.com/ehang-io/nps)
+后来我们的方案换成了[nps](https://github.com/ehang-io/nps)
 这个的配置比较简单，于是我成功了
 登录你的公网服务器IP:8080
 就可以看见![alt text]({109A1B0F-05B1-4048-BD1D-4560F6E3A008}.png) 这个页面
