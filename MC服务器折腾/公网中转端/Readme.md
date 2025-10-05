@@ -32,7 +32,7 @@
 1. 在运行 MC-server 的服务器上安装 npc。
 2. 下载 [nps release](https://github.com/ehang-io/nps/releases)。
 3. 解压后找到 `npc.conf` 文件并进行配置。
-
+```test
    示例配置：
 [common]
 server_addr=xx.xx.xx.xx:8024
@@ -88,7 +88,7 @@ mode=tcp
 target_addr=127.0.0.1:25565
 server_port=25565
 
-
+```
 4. 在 nps 网页控制端的客户端页面，点击“隧道”，根据 `npc.conf` 添加隧道。
 
    示例：
