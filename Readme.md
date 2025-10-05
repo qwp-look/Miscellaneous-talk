@@ -27,5 +27,5 @@
 ## 📁 浏览方式
 
 1. 内容按 **时间倒序** 排列（最新更新最前）  
-2. 每篇日记使用一个以事件命名的文件夹，内部 `.md` 文件命名格式为：  
-3.[Table-of-contents.md](Table-of-contents.md)
+2. 每篇日记使用一个以事件命名的文件夹，内部 `.md` 文件命名格式为
+3. [Table-of-contents.md](Table-of-contents.md)
